@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/13 07:53:40 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 08:07:52 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/20 18:13:25 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,20 +29,25 @@ def main():
 	i = 0
 	word = ""
 	while (i < len(content)):
-		if content[i] != ' ' and content[i] != '\n':
+		if ((content[i] != ' ') and (content[i] != '\n') and (content[i] != '\t') and (content[i] != '\r') and (content[i] != '\0')):
 			word += content[i]
 		else:
 			length = len(word)
-			if length in word_dict:
+			if length < 2:
+				pass
+			elif length in word_dict:
 				word_dict[length] += 1
 			else:
 				word_dict[length] = 1
 			word = ""
 		i += 1
 
+
 	if word:
 		length = len(word)
-		if length in word_dict:
+		if length < 2:
+			pass
+		elif length in word_dict:
 			word_dict[length] += 1
 		else:
 			word_dict[length] = 1
