@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 08:40:01 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 03:19:15 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 16:28:28 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,8 @@ def main():
 		m = int(sys.argv[2])
 	except ValueError:
 		return 1
+	if n <=0 or m <=0:
+		return matrix
 	while (i < n):
 		j = 0
 		while (j < m):

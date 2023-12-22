@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 09:37:59 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/12 10:13:18 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 16:48:18 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ import sys
 
 
 def main():
-	if len(sys.argv) < 2:
+	if len(sys.argv) != 2:
 		print("Error! No string given")
 		return 1
 	

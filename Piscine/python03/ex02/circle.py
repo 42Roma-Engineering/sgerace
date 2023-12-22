@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 23:12:02 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/12 23:25:09 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 16:56:04 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,9 +54,9 @@ def main():
 	c = Circle((0, 0), 1)
 	p = Point(x, y)
 	if c.contains(p):
-		print(f"The point ({x}, {y}) lies in the Circle of center (0, 0) and radius 1")
+		print(f"The Point ({x}, {y}) lies in the Circle of center (0, 0) and radius 1")
 	else:
-		print(f"The point ({x}, {y}) lies out of the Circle of center (0, 0) and radius 1")
+		print(f"The Point ({x}, {y}) lies out of the Circle of center (0, 0) and radius 1")
 
 if __name__ == "__main__":
 	main()

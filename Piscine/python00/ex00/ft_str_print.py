@@ -6,9 +6,14 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 22:46:39 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/11 23:56:47 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/20 18:26:27 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-user_input = input("Insert your string: ")
-print("Your string is:", user_input)
+def main():
+	user_input = input("Insert your string: ")
+	print("Your string is:", user_input)
+
+
+if __name__ == '__main__':
+	main()

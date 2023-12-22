@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 09:30:46 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 03:25:08 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 16:45:46 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,12 @@
 import sys
 
 
-def trim(list1):
-	del list1[0]
-	del list1[-1]
+def trim(list1) -> None:
+	if len(list1) > 0:
+		del list1[0]
+	if len(list1) > 1:
+		del list1[-1]
+	return None
 
 
 def main():

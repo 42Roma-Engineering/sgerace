@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/12 00:09:07 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 01:36:39 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/20 18:31:47 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ def main():
 	except ValueError:
 		return (1)
 
-	if integer > ft_strlen(string):
+	if integer >= ft_strlen(string):
 		print("Error: index out of range")
 		return (1)
 

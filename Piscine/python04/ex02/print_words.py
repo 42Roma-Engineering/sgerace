@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/13 07:48:41 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 07:52:01 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 17:13:52 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ def main():
 			if (len(string) > leng):
 				print(string)
 			string = ""
-		else:
+		elif content[i] != ' ' and content[i] != '\t':
 			string += content[i]
 		i += 1
 	if len(string) > leng:

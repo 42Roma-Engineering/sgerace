@@ -6,7 +6,7 @@
 #    By: sgerace <sgerace@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/13 07:27:59 by sgerace           #+#    #+#              #
-#    Updated: 2023/12/13 07:45:28 by sgerace          ###   ########.fr        #
+#    Updated: 2023/12/22 17:12:12 by sgerace          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,18 +31,22 @@ def main():
 			if (len(string) > leng):
 				list1 += [string + '\n']
 			string = ""
-		else:
+		elif content[i] != ' ' and content[i] != '\t':
 			string += content[i]
 		i += 1
 	if len(string) > leng:
 		list1 += [string]
 	file.close()
 
+	file = open("long_words.txt", "w")
+	file.write("")
+	file.close()
+
 	for i in list1:
 		file = open("long_words.txt", "a")
 		file.write(i)
 		file.close()
-	print(f"The words longer than {leng} have been written on \"long_words.txt\":")
+	print(f"The words longer than {leng} have been written on \"long_words.txt\"")
 
 
 
